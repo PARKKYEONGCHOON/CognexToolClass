@@ -117,7 +117,11 @@ namespace blobRun
             {
                 CogImage8Grey tmpCogImage8Grey = new CogImage8Grey();
 
+
+               
                 Tool.RunParams.ColorRangeCollection = m_cogColorCollection;
+                
+                Tool.Region = region;
 
                 tmpCogImage8Grey = Tool.RunParams.Execute(image, region);
 
